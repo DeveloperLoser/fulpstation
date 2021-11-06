@@ -196,6 +196,7 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_BELT
 	custom_materials = list(/datum/material/iron=75000, /datum/material/glass=37500)
+	toolspeed = 1.1 // Unwrenching speed, 10% slower than a normal wrench at first
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 50)
 	resistance_flags = FIRE_PROOF
 	///Sparks system used when changing device in the UI
@@ -439,8 +440,12 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 	var/queued_p_flipped = p_flipped
 
 	//Unwrench pipe before we build one over/paint it, but only if we're not already running a do_after on it already to prevent a potential runtime.
-	if((mode & DESTROY_MODE) && (upgrade_flags & RPD_UPGRADE_UNWRENCH) && istype(attack_target, /obj/machinery/atmospherics) && !(DOING_INTERACTION_WITH_TARGET(user, attack_target)))
-		attack_target = attack_target.wrench_act(user, src)
+	if((mode & DESTROY_MODE) && istype(attack_target, /obj/machinery/atmospherics) && !(DOING_INTERACTION_WITH_TARGET(user, attack_target)))
+		if((upgrade_flags && RPD_UPGRADE_UNWRENCH_SPEED))
+			toolspeed = 0.7
+			attack_target = attack_target.wrench_act(user, src)
+		else
+			attack_target = attack_target.wrench_act(user, src)
 		if(!isatom(attack_target))
 			CRASH("When attempting to call [A.type].wrench_act(), received the following non-atom return value: [attack_target]")
 
@@ -671,5 +676,5 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 	var/upgrade_flags
 
 /obj/item/rpd_upgrade/unwrench
-	desc = "Adds reverse wrench mode to the RPD. Attention, due to budget cuts, the mode is hard linked to the destroy mode control button."
-	upgrade_flags = RPD_UPGRADE_UNWRENCH
+	desc = "Speeds up the reverse wrench mode of the RPD."
+	upgrade_flags = RPD_UPGRADE_UNWRENCH_SPEED

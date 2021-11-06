@@ -94,7 +94,7 @@ GLOBAL_DATUM_INIT(fire_overlay, /mutable_appearance, mutable_appearance('icons/e
 	var/custom_premium_price
 	///Whether spessmen with an ID with an age below AGE_MINOR (20 by default) can buy this item
 	var/age_restricted = FALSE
-	
+
 	///flags which determine which body parts are protected from heat. [See here][HEAD]
 	var/heat_protection = 0
 	///flags which determine which body parts are protected from cold. [See here][HEAD]
