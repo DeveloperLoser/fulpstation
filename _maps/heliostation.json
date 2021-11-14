@@ -1,6 +1,6 @@
 {
 	"version": 1,
-	"map_name": "Heliostation",
+	"map_name": "Atmosoherics Demo",
 	"map_path": "map_files/Heliostation",
 	"map_file": "Heliostation.dmm",
 	"shuttles": {
@@ -14,7 +14,7 @@
 			"additional_cqc_areas": ["/area/service/bar", "/area/security/prison/upper"]
 		},
 		"prisoner": {
-			"spawn_positions": 4
+			"spawn_positions": 0
 		}
 	}
 }
