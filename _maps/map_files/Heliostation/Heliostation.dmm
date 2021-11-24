@@ -3750,10 +3750,20 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/maintenance/solars/port/aft)
+"bJp" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/layer2{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/engineering/atmos)
 "bRM" = (
 /turf/open/space/basic,
 /turf/open/space/basic,
 /area/space)
+"ceW" = (
+/obj/machinery/portable_atmospherics/canister/healium,
+/turf/open/floor/iron,
+/area/engineering/atmos)
 "coW" = (
 /turf/closed/wall/r_wall,
 /area/engineering/atmos)
@@ -3769,6 +3779,10 @@
 /area/engineering/atmos/project)
 "cvb" = (
 /turf/closed/wall,
+/area/engineering/atmos)
+"cwD" = (
+/obj/machinery/atmospherics/components/binary/volume_pump/layer2,
+/turf/open/floor/iron,
 /area/engineering/atmos)
 "cwK" = (
 /obj/machinery/door/airlock/external{
@@ -4135,6 +4149,10 @@
 	},
 /turf/open/floor/engine/o2,
 /area/engineering/atmos)
+"cIn" = (
+/obj/structure/closet/emcloset,
+/turf/open/floor/iron,
+/area/engineering/lobby)
 "cIB" = (
 /turf/open/floor/engine/co2,
 /area/engineering/atmos)
@@ -5158,6 +5176,10 @@
 /turf/open/space/basic,
 /turf/open/floor/plating,
 /area/engineering/atmos)
+"dVH" = (
+/obj/machinery/suit_storage_unit/atmos,
+/turf/open/floor/iron,
+/area/engineering/atmos)
 "eEO" = (
 /obj/structure/sign/warning/radiation,
 /turf/closed/wall/r_wall,
@@ -5178,6 +5200,10 @@
 	},
 /turf/open/floor/plating,
 /area/engineering/atmos)
+"fBe" = (
+/obj/machinery/portable_atmospherics/canister/bz,
+/turf/open/floor/iron,
+/area/engineering/atmos)
 "guj" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/components/unary/outlet_injector/on/layer2{
@@ -5186,6 +5212,19 @@
 	},
 /turf/open/space/basic,
 /area/engineering/main)
+"gCu" = (
+/obj/machinery/portable_atmospherics/canister/antinoblium,
+/turf/open/floor/iron,
+/area/engineering/atmos)
+"hKb" = (
+/obj/machinery/portable_atmospherics/canister/nitryl,
+/turf/open/floor/iron,
+/area/engineering/atmos)
+"hPw" = (
+/obj/machinery/portable_atmospherics/canister/proto,
+/obj/machinery/portable_atmospherics/canister/proto,
+/turf/open/floor/iron,
+/area/engineering/atmos)
 "idi" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
@@ -5212,12 +5251,20 @@
 	},
 /turf/open/floor/engine,
 /area/engineering/main)
+"jeV" = (
+/obj/structure/altar_of_gods,
+/turf/open/floor/iron,
+/area/engineering/lobby)
 "jqp" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
 	dir = 9
 	},
 /turf/closed/wall/r_wall,
 /area/engineering/main)
+"jyS" = (
+/obj/machinery/portable_atmospherics/canister/proto,
+/turf/open/floor/iron,
+/area/engineering/atmos)
 "kme" = (
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
@@ -5259,6 +5306,26 @@
 	},
 /turf/open/floor/engine,
 /area/engineering/supermatter)
+"mtQ" = (
+/obj/structure/closet/firecloset/full,
+/turf/open/floor/iron,
+/area/engineering/lobby)
+"mxh" = (
+/obj/machinery/portable_atmospherics/canister/hydrogen,
+/turf/open/floor/iron,
+/area/engineering/atmos)
+"mDE" = (
+/obj/machinery/portable_atmospherics/canister/water_vapor,
+/turf/open/floor/iron,
+/area/engineering/atmos)
+"ngq" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/layer2,
+/turf/open/floor/iron,
+/area/engineering/atmos)
+"noU" = (
+/obj/structure/closet/secure_closet/atmospherics,
+/turf/open/floor/iron,
+/area/engineering/atmos)
 "nrA" = (
 /obj/effect/spawner/structure/window/reinforced/plasma,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
@@ -5274,6 +5341,14 @@
 /obj/effect/turf_decal/bot/right,
 /turf/open/floor/iron,
 /area/engineering/atmos/project)
+"nEy" = (
+/obj/machinery/suit_storage_unit/ce,
+/turf/open/floor/iron,
+/area/engineering/atmos)
+"nNI" = (
+/obj/machinery/portable_atmospherics/canister/nob,
+/turf/open/floor/iron,
+/area/engineering/atmos)
 "nZg" = (
 /obj/effect/turf_decal/box/white{
 	color = "#EFB341"
@@ -5287,6 +5362,10 @@
 	},
 /turf/open/floor/plating,
 /area/engineering/main)
+"osg" = (
+/obj/machinery/portable_atmospherics/canister/tier_3,
+/turf/open/floor/iron,
+/area/engineering/atmos)
 "oLK" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -5300,12 +5379,20 @@
 "pQK" = (
 /turf/closed/wall/r_wall,
 /area/engineering/main)
+"qCv" = (
+/obj/machinery/portable_atmospherics/canister/miasma,
+/turf/open/floor/iron,
+/area/engineering/atmos)
 "qPR" = (
 /obj/effect/turf_decal/box/white{
 	color = "#9FED58"
 	},
 /turf/open/floor/iron,
 /area/engineering/atmos/project)
+"raG" = (
+/obj/machinery/portable_atmospherics/canister/freon,
+/turf/open/floor/iron,
+/area/engineering/atmos)
 "rHS" = (
 /obj/effect/spawner/structure/window/reinforced/plasma,
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible,
@@ -5319,6 +5406,14 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible/layer2,
 /turf/open/space/basic,
 /area/space/nearstation)
+"stj" = (
+/obj/machinery/portable_atmospherics/canister/stimulum,
+/turf/open/floor/iron,
+/area/engineering/atmos)
+"sRp" = (
+/obj/machinery/atmospherics/pipe/layer_manifold/yellow,
+/turf/open/floor/iron,
+/area/engineering/atmos)
 "sWZ" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "engsm";
@@ -5333,6 +5428,14 @@
 /area/engineering/main)
 "uTN" = (
 /obj/structure/window/reinforced/plasma/unanchored,
+/turf/open/floor/iron,
+/area/engineering/atmos)
+"uXn" = (
+/obj/machinery/portable_atmospherics/canister/halon,
+/turf/open/floor/iron,
+/area/engineering/atmos)
+"viT" = (
+/obj/machinery/portable_atmospherics/canister/zauker,
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "vjN" = (
@@ -5371,6 +5474,10 @@
 	},
 /turf/open/floor/engine,
 /area/engineering/main)
+"vwR" = (
+/obj/machinery/portable_atmospherics/canister/proto_nitrate,
+/turf/open/floor/iron,
+/area/engineering/atmos)
 "vGd" = (
 /obj/effect/turf_decal/siding/yellow{
 	color = "#FFD700";
@@ -5393,6 +5500,12 @@
 /obj/machinery/power/energy_accumulator/tesla_coil/anchored,
 /turf/open/floor/engine,
 /area/engineering/supermatter)
+"wpM" = (
+/obj/machinery/atmospherics/components/binary/volume_pump/layer2{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/engineering/atmos)
 "wMF" = (
 /obj/effect/spawner/structure/window/reinforced/plasma,
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
@@ -5418,6 +5531,10 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/manifold4w/layer4,
 /turf/open/space/basic,
 /area/space/nearstation)
+"xSH" = (
+/obj/machinery/portable_atmospherics/canister/pluoxium,
+/turf/open/floor/iron,
+/area/engineering/atmos)
 "xWv" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible,
 /obj/effect/turf_decal/tile{
@@ -29006,8 +29123,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+ceW
+ceW
 crj
 crj
 crj
@@ -29032,8 +29149,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+xSH
+xSH
 crj
 cKj
 aaa
@@ -29263,8 +29380,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+ceW
+ceW
 crj
 crj
 crj
@@ -29289,8 +29406,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+xSH
+xSH
 crj
 cKj
 aaa
@@ -29777,8 +29894,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+uXn
+uXn
 crj
 crj
 crj
@@ -29803,8 +29920,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+hPw
+jyS
 crj
 cKj
 aaa
@@ -30034,8 +30151,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+uXn
+uXn
 crj
 crj
 crj
@@ -30060,8 +30177,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+jyS
+jyS
 crj
 cKj
 aaa
@@ -30548,8 +30665,8 @@ aaa
 aaa
 coW
 crj
-crj
-crj
+raG
+raG
 crj
 crj
 crj
@@ -30574,8 +30691,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+vwR
+vwR
 crj
 coW
 aaa
@@ -30805,16 +30922,16 @@ aaa
 aaa
 cKj
 crj
+raG
+raG
 crj
 crj
 crj
 crj
 crj
-crj
-crj
-crj
-crj
-crj
+ngq
+wpM
+sRp
 cEA
 wYV
 wMF
@@ -30824,15 +30941,15 @@ kUi
 wMF
 wYV
 cLK
+sRp
+cwD
+bJp
 crj
 crj
 crj
 crj
-crj
-crj
-crj
-crj
-crj
+vwR
+vwR
 crj
 cKj
 aaa
@@ -31319,8 +31436,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+fBe
+fBe
 crj
 crj
 crj
@@ -31345,8 +31462,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+stj
+stj
 crj
 cKj
 aaa
@@ -31576,8 +31693,8 @@ aaa
 aaa
 coW
 crj
-crj
-crj
+fBe
+fBe
 crj
 crj
 crj
@@ -31602,8 +31719,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+stj
+stj
 crj
 coW
 aaa
@@ -31840,9 +31957,9 @@ crj
 crj
 crj
 crj
-crj
-crj
-crj
+ngq
+wpM
+sRp
 aar
 wYV
 wMF
@@ -31852,9 +31969,9 @@ aax
 wMF
 wYV
 cLM
-crj
-crj
-crj
+sRp
+cwD
+bJp
 crj
 crj
 crj
@@ -32605,9 +32722,9 @@ aaa
 coW
 crj
 crj
-crj
+dVH
 cvb
-crj
+noU
 crj
 crj
 crj
@@ -32628,9 +32745,9 @@ crj
 crj
 crj
 crj
-crj
+noU
 cvb
-crj
+dVH
 crj
 crj
 coW
@@ -32862,9 +32979,9 @@ aaa
 cKj
 crj
 crj
-crj
+dVH
 cvb
-crj
+noU
 crj
 crj
 crj
@@ -32885,9 +33002,9 @@ crj
 crj
 crj
 crj
-crj
+noU
 cvb
-crj
+dVH
 crj
 crj
 cKj
@@ -33119,9 +33236,9 @@ aaa
 cKj
 crj
 crj
-crj
+dVH
 cvb
-crj
+nEy
 crj
 aao
 crj
@@ -33142,9 +33259,9 @@ crj
 crj
 aao
 crj
-crj
+nEy
 cvb
-crj
+dVH
 crj
 crj
 cKj
@@ -33376,15 +33493,15 @@ aaa
 cKj
 crj
 crj
-crj
+dVH
 cvb
+noU
 crj
 crj
 crj
-crj
-crj
-crj
-crj
+ngq
+wpM
+sRp
 cDY
 wYV
 wMF
@@ -33394,14 +33511,14 @@ aaz
 wMF
 wYV
 aaK
+sRp
+cwD
+bJp
 crj
 crj
-crj
-crj
-crj
-crj
+noU
 cvb
-crj
+dVH
 crj
 crj
 cKj
@@ -33633,9 +33750,9 @@ aaa
 coW
 crj
 crj
-crj
+dVH
 cvb
-crj
+noU
 crj
 crj
 crj
@@ -33656,9 +33773,9 @@ crj
 crj
 crj
 crj
-crj
+noU
 cvb
-crj
+dVH
 crj
 crj
 coW
@@ -34403,8 +34520,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+gCu
+gCu
 crj
 crj
 crj
@@ -34429,8 +34546,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+mDE
+mDE
 crj
 cKj
 aaa
@@ -34660,8 +34777,8 @@ aaa
 aaa
 coW
 crj
-crj
-crj
+gCu
+gCu
 crj
 crj
 crj
@@ -34686,8 +34803,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+mDE
+mDE
 crj
 coW
 aaa
@@ -34924,9 +35041,9 @@ crj
 crj
 crj
 crj
-crj
-crj
-crj
+ngq
+wpM
+sRp
 cEd
 wYV
 wMF
@@ -34936,9 +35053,9 @@ aaA
 wMF
 wYV
 cLS
-crj
-crj
-crj
+sRp
+cwD
+bJp
 crj
 crj
 crj
@@ -35174,8 +35291,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+nNI
+nNI
 crj
 crj
 crj
@@ -35200,8 +35317,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+viT
+viT
 crj
 cKj
 aaa
@@ -35431,8 +35548,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+nNI
+nNI
 crj
 crj
 crj
@@ -35457,8 +35574,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+viT
+viT
 crj
 cKj
 aaa
@@ -35945,16 +36062,16 @@ aaa
 aaa
 cKj
 crj
+hKb
+hKb
 crj
 crj
 crj
 crj
 crj
-crj
-crj
-crj
-crj
-crj
+ngq
+wpM
+sRp
 cEy
 wYV
 wMF
@@ -35964,15 +36081,15 @@ aaC
 cKj
 wOw
 aaQ
+sRp
+cwD
+bJp
 crj
 crj
 crj
 crj
-crj
-crj
-crj
-crj
-crj
+qCv
+qCv
 crj
 cKj
 aaa
@@ -36202,8 +36319,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+hKb
+hKb
 crj
 crj
 crj
@@ -36228,8 +36345,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+qCv
+qCv
 crj
 cKj
 aaa
@@ -36716,8 +36833,8 @@ aaa
 aaa
 coW
 crj
-crj
-crj
+osg
+osg
 crj
 crj
 crj
@@ -36742,8 +36859,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+mxh
+mxh
 crj
 coW
 aaa
@@ -36973,8 +37090,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+osg
+osg
 crj
 crj
 crj
@@ -36999,8 +37116,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+mxh
+mxh
 crj
 cKj
 aaa
@@ -38019,6 +38136,13 @@ rRf
 rRf
 rRf
 rRf
+mtQ
+mtQ
+mtQ
+rRf
+cIn
+cIn
+cIn
 rRf
 rRf
 rRf
@@ -38028,14 +38152,7 @@ rRf
 rRf
 rRf
 rRf
-rRf
-rRf
-rRf
-rRf
-rRf
-rRf
-rRf
-rRf
+mtQ
 pQK
 aaZ
 abm
@@ -39048,7 +39165,7 @@ rRf
 rRf
 rRf
 rRf
-rRf
+jeV
 rRf
 rRf
 rRf
@@ -40075,6 +40192,13 @@ rRf
 rRf
 rRf
 rRf
+mtQ
+mtQ
+mtQ
+rRf
+cIn
+cIn
+cIn
 rRf
 rRf
 rRf
@@ -40084,14 +40208,7 @@ rRf
 rRf
 rRf
 rRf
-rRf
-rRf
-rRf
-rRf
-rRf
-rRf
-rRf
-rRf
+mtQ
 pQK
 abi
 abt
@@ -40828,8 +40945,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+ceW
+ceW
 crj
 crj
 crj
@@ -40854,8 +40971,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+xSH
+xSH
 crj
 cKj
 aaa
@@ -41085,8 +41202,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+ceW
+ceW
 crj
 crj
 crj
@@ -41111,8 +41228,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+xSH
+xSH
 crj
 cKj
 aaa
@@ -41599,8 +41716,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+uXn
+uXn
 crj
 crj
 crj
@@ -41625,8 +41742,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+hPw
+jyS
 crj
 cKj
 aaa
@@ -41856,8 +41973,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+uXn
+uXn
 crj
 crj
 crj
@@ -41882,8 +41999,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+jyS
+jyS
 crj
 cKj
 aaa
@@ -42370,8 +42487,8 @@ aaa
 aaa
 coW
 crj
-crj
-crj
+raG
+raG
 crj
 crj
 crj
@@ -42396,8 +42513,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+vwR
+vwR
 crj
 coW
 aaa
@@ -42627,8 +42744,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+raG
+raG
 crj
 crj
 crj
@@ -42653,8 +42770,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+vwR
+vwR
 crj
 cKj
 aaa
@@ -43141,8 +43258,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+fBe
+fBe
 crj
 crj
 crj
@@ -43167,8 +43284,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+stj
+stj
 crj
 cKj
 aaa
@@ -43398,8 +43515,8 @@ aaa
 aaa
 coW
 crj
-crj
-crj
+fBe
+fBe
 crj
 crj
 crj
@@ -43424,8 +43541,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+stj
+stj
 crj
 coW
 aaa
@@ -44427,9 +44544,9 @@ aaa
 coW
 crj
 crj
-crj
+dVH
 cvb
-crj
+noU
 crj
 crj
 crj
@@ -44450,9 +44567,9 @@ crj
 crj
 crj
 crj
-crj
+noU
 cvb
-crj
+dVH
 crj
 crj
 coW
@@ -44684,9 +44801,9 @@ aaa
 cKj
 crj
 crj
-crj
+dVH
 cvb
-crj
+noU
 crj
 crj
 crj
@@ -44707,9 +44824,9 @@ crj
 crj
 crj
 crj
-crj
+noU
 cvb
-crj
+dVH
 crj
 crj
 cKj
@@ -44941,9 +45058,9 @@ aaa
 cKj
 crj
 crj
-crj
+dVH
 cvb
-crj
+nEy
 crj
 aao
 crj
@@ -44964,9 +45081,9 @@ crj
 crj
 aao
 crj
-crj
+nEy
 cvb
-crj
+dVH
 crj
 crj
 cKj
@@ -45198,9 +45315,9 @@ aaa
 cKj
 crj
 crj
-crj
+dVH
 cvb
-crj
+noU
 crj
 crj
 crj
@@ -45221,9 +45338,9 @@ crj
 crj
 crj
 crj
-crj
+noU
 cvb
-crj
+dVH
 crj
 crj
 cKj
@@ -45455,9 +45572,9 @@ aaa
 coW
 crj
 crj
-crj
+dVH
 cvb
-crj
+noU
 crj
 crj
 crj
@@ -45478,9 +45595,9 @@ crj
 crj
 crj
 crj
-crj
+noU
 cvb
-crj
+dVH
 crj
 crj
 coW
@@ -46225,8 +46342,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+gCu
+gCu
 crj
 crj
 crj
@@ -46251,8 +46368,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+mDE
+mDE
 crj
 cKj
 aaa
@@ -46482,8 +46599,8 @@ aaa
 aaa
 coW
 crj
-crj
-crj
+gCu
+gCu
 crj
 crj
 crj
@@ -46508,8 +46625,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+mDE
+mDE
 crj
 coW
 aaa
@@ -46996,8 +47113,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+nNI
+nNI
 crj
 crj
 crj
@@ -47022,8 +47139,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+viT
+viT
 crj
 cKj
 aaa
@@ -47253,8 +47370,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+nNI
+nNI
 crj
 crj
 crj
@@ -47279,8 +47396,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+viT
+viT
 crj
 cKj
 aaa
@@ -47767,8 +47884,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+hKb
+hKb
 crj
 crj
 crj
@@ -47793,8 +47910,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+qCv
+qCv
 crj
 cKj
 aaa
@@ -48024,8 +48141,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+hKb
+hKb
 crj
 crj
 crj
@@ -48050,8 +48167,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+qCv
+qCv
 crj
 cKj
 aaa
@@ -48538,8 +48655,8 @@ aaa
 aaa
 coW
 crj
-crj
-crj
+osg
+osg
 crj
 crj
 crj
@@ -48564,8 +48681,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+mxh
+mxh
 crj
 coW
 aaa
@@ -48795,8 +48912,8 @@ aaa
 aaa
 cKj
 crj
-crj
-crj
+osg
+osg
 crj
 crj
 crj
@@ -48821,8 +48938,8 @@ crj
 crj
 crj
 crj
-crj
-crj
+mxh
+mxh
 crj
 cKj
 aaa
