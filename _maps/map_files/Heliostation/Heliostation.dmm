@@ -3,21 +3,30 @@
 /turf/open/space/basic,
 /area/space)
 "aab" = (
-/obj/machinery/power/solar{
-	id = "aftport";
-	name = "Aft-Port Solar Array"
+/turf/closed/wall/r_wall,
+/area/space)
+"aac" = (
+/obj/structure/window/reinforced/plasma{
+	dir = 4
 	},
 /obj/structure/cable,
-/turf/open/floor/iron/solarpanel/airless,
-/area/maintenance/solars/port/aft)
-"aac" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/cable,
-/turf/open/space/basic,
-/area/maintenance/solars/port/aft)
+/obj/machinery/atmospherics/pipe/smart/manifold/brown/visible{
+	dir = 8
+	},
+/obj/machinery/power/energy_accumulator/tesla_coil/anchored,
+/turf/open/floor/engine,
+/area/engineering/main)
 "aad" = (
-/turf/closed/wall/r_wall,
-/area/maintenance/solars/port/aft)
+/obj/structure/window/reinforced/plasma{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold/brown/visible{
+	dir = 4
+	},
+/obj/machinery/power/energy_accumulator/tesla_coil/anchored,
+/turf/open/floor/engine,
+/area/engineering/main)
 "aag" = (
 /obj/effect/turf_decal/arrows/red{
 	dir = 4;
@@ -26,9 +35,16 @@
 /turf/open/floor/iron,
 /area/engineering/atmos/project)
 "aah" = (
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
-/area/maintenance/solars/port/aft)
+/obj/structure/window/reinforced/plasma{
+	dir = 4
+	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold/brown/visible{
+	dir = 8
+	},
+/obj/machinery/power/energy_accumulator/grounding_rod/anchored,
+/turf/open/floor/engine,
+/area/engineering/main)
 "aai" = (
 /obj/effect/turf_decal/box/white,
 /obj/effect/turf_decal/arrows/white{
@@ -38,63 +54,51 @@
 /turf/open/floor/iron,
 /area/engineering/atmos/project)
 "aaj" = (
-/obj/machinery/power/tracker,
-/obj/structure/cable,
-/turf/open/floor/iron/solarpanel/airless,
-/area/maintenance/solars/port/aft)
-"aal" = (
-/obj/structure/cable,
-/obj/machinery/door/airlock/external{
-	name = "Solar Maintenance";
-	req_one_access_txt = "10;24"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFD700";
-	dir = 1;
-	name = "Engineering yellow corner"
-	},
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFD700";
-	name = "Engineering yellow corner"
-	},
-/turf/open/floor/iron,
-/area/maintenance/solars/port/aft)
-"aam" = (
-/obj/structure/cable,
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFD700";
-	dir = 1;
-	name = "Engineering yellow corner"
-	},
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFD700";
-	name = "Engineering yellow corner"
-	},
-/turf/open/floor/iron,
-/area/maintenance/solars/port/aft)
-"aan" = (
-/obj/structure/cable,
-/obj/machinery/door/airlock/external{
-	name = "Solar Maintenance";
-	req_one_access_txt = "10;24"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+/obj/structure/window/reinforced/plasma{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFD700";
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold/brown/visible{
+	dir = 4
+	},
+/obj/machinery/power/energy_accumulator/grounding_rod/anchored,
+/turf/open/floor/engine,
+/area/engineering/main)
+"aal" = (
+/obj/structure/window/reinforced/plasma{
+	dir = 4
+	},
+/obj/structure/cable,
+/obj/machinery/camera{
+	c_tag = "Engine Chamber";
 	dir = 1;
-	name = "Engineering yellow corner"
+	name = "Engine Camera";
+	network = list("ss13","engineering","engine")
 	},
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFD700";
-	name = "Engineering yellow corner"
+/obj/machinery/atmospherics/pipe/smart/simple/brown/visible{
+	dir = 5
 	},
-/turf/open/floor/iron,
-/area/maintenance/solars/port/aft)
+/obj/machinery/power/energy_accumulator/tesla_coil/anchored,
+/turf/open/floor/engine,
+/area/engineering/main)
+"aam" = (
+/obj/structure/window/reinforced/plasma{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/simple/brown/visible{
+	dir = 9
+	},
+/obj/machinery/power/energy_accumulator/tesla_coil/anchored,
+/turf/open/floor/engine,
+/area/engineering/main)
+"aan" = (
+/obj/machinery/airalarm/engine{
+	dir = 4;
+	pixel_x = -23
+	},
+/turf/open/floor/engine,
+/area/engineering/supermatter)
 "aao" = (
 /mob/living/simple_animal/bot/medbot{
 	bot_name = "Mister Fix U Up";
@@ -610,6 +614,8 @@
 	color = "#FFD700";
 	name = "Engineering yellow corner"
 	},
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/engineering/main)
 "aaX" = (
@@ -674,13 +680,13 @@
 /area/engineering/main)
 "abd" = (
 /obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/siding/yellow{
 	color = "#FFD700";
 	dir = 1;
 	name = "engineering yellow"
 	},
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/engineering/main)
 "abe" = (
@@ -727,22 +733,20 @@
 /turf/open/floor/iron/dark,
 /area/engineering/main)
 "abj" = (
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 10;
-	name = "engineering yellow"
+/obj/machinery/camera{
+	c_tag = "Engine Antechamber";
+	dir = 8;
+	name = "Engine Camera";
+	network = list("ss13","engineering","engine")
 	},
-/obj/structure/sign/warning/vacuum/external{
-	pixel_x = -30
-	},
-/obj/machinery/atmospherics/components/binary/valve/digital{
-	name = "Waste Release"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos)
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/engine,
+/area/engineering/supermatter)
 "abk" = (
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible/layer2,
 /turf/open/space/basic,
-/area/engineering/atmos)
+/area/engineering/main)
 "abl" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/yellow{
@@ -780,9 +784,6 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden/layer2{
 	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden/layer4{
-	dir = 8
 	},
 /turf/open/floor/iron,
 /area/engineering/main)
@@ -828,70 +829,65 @@
 /turf/open/floor/iron,
 /area/engineering/main)
 "abw" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 9
-	},
-/turf/open/floor/plating,
-/area/engineering/atmos)
+/obj/structure/lattice/catwalk,
+/turf/open/space/basic,
+/area/engineering/main)
 "abx" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible,
-/turf/open/floor/plating,
-/area/engineering/atmos)
+/obj/machinery/rnd/production/techfab/department,
+/turf/open/floor/iron,
+/area/engineering/lobby)
 "aby" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
-/turf/open/floor/plating,
+/obj/machinery/rnd/production/techfab/department,
+/turf/open/floor/iron,
 /area/engineering/atmos)
 "abz" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
-/turf/open/floor/plating,
-/area/engineering/atmos)
-"abA" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
-	dir = 5
-	},
-/turf/open/floor/plating,
-/area/engineering/atmos)
-"abB" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
-/obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/engineering/atmos)
-"abC" = (
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
-	dir = 4
-	},
 /turf/closed/wall/r_wall,
+/area/maintenance/disposal/incinerator)
+"abA" = (
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/turf/open/floor/plating,
+/area/maintenance/disposal/incinerator)
+"abB" = (
+/obj/machinery/door/airlock/atmos{
+	name = "Turbine Access";
+	req_access_txt = "24"
+	},
+/turf/open/floor/plating,
+/area/maintenance/disposal/incinerator)
+"abC" = (
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
 /area/engineering/atmos)
 "abD" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible,
-/obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible{
-	dir = 4
+/obj/machinery/camera{
+	c_tag = "Construction Room";
+	dir = 4;
+	name = "Engineering Camera";
+	network = list("ss13","engineering")
 	},
-/turf/open/floor/plating,
-/area/engineering/atmos)
+/obj/effect/turf_decal/siding/yellow{
+	color = "#FFD700";
+	dir = 9;
+	name = "engineering yellow"
+	},
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
 "abE" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
-	dir = 4
+/obj/effect/turf_decal/siding/yellow{
+	color = "#FFD700";
+	dir = 1;
+	name = "engineering yellow"
 	},
-/turf/open/floor/plating,
-/area/engineering/atmos)
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
 "abF" = (
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
-	dir = 4
+/obj/effect/turf_decal/siding/yellow{
+	color = "#FFD700";
+	dir = 5;
+	name = "engineering yellow"
 	},
-/obj/machinery/atmospherics/pipe/bridge_pipe/orange/visible,
-/turf/closed/wall/r_wall,
-/area/engineering/atmos)
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
 "abG" = (
 /obj/effect/turf_decal/siding/yellow{
 	color = "#FFD700";
@@ -909,57 +905,52 @@
 /turf/open/floor/iron,
 /area/engineering/main)
 "abI" = (
-/obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/smart/simple/orange/visible{
-	dir = 4
-	},
+/obj/effect/spawner/structure/window/reinforced/plasma,
 /turf/open/space/basic,
-/area/space/nearstation)
+/area/engineering/atmos)
 "abJ" = (
-/obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible,
-/obj/machinery/atmospherics/pipe/bridge_pipe/orange/visible{
-	dir = 4
-	},
-/turf/open/space/basic,
-/area/space/nearstation)
+/turf/open/floor/plating,
+/area/engineering/atmos)
 "abK" = (
-/obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
-/obj/machinery/atmospherics/pipe/bridge_pipe/orange/visible{
-	dir = 4
+/obj/effect/turf_decal/siding/yellow{
+	color = "#FFD700";
+	dir = 8;
+	name = "engineering yellow"
 	},
-/turf/open/space/basic,
-/area/space/nearstation)
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
 "abL" = (
-/obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
-/obj/machinery/atmospherics/pipe/bridge_pipe/orange/visible{
-	dir = 4
-	},
-/turf/open/space/basic,
-/area/space/nearstation)
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
 "abM" = (
-/obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/smart/simple/orange/visible{
-	dir = 9
+/obj/effect/turf_decal/siding/yellow{
+	color = "#FFD700";
+	dir = 4;
+	name = "engineering yellow"
 	},
-/turf/open/space/basic,
-/area/space/nearstation)
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
 "abN" = (
-/obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible,
-/turf/open/space/basic,
-/area/space/nearstation)
+/obj/effect/turf_decal/siding/yellow{
+	color = "#FFD700";
+	dir = 4;
+	name = "engineering yellow"
+	},
+/obj/machinery/airalarm/directional/east,
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
 "abO" = (
-/obj/structure/lattice,
-/turf/open/space/basic,
-/area/space/nearstation)
+/turf/open/floor/plating/airless,
+/area/engineering/atmos)
 "abU" = (
-/obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
-/turf/open/space/basic,
-/area/space/nearstation)
+/obj/effect/turf_decal/siding/yellow{
+	color = "#FFD700";
+	dir = 4;
+	name = "engineering yellow"
+	},
+/obj/machinery/light/directional/east,
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
 "abV" = (
 /obj/structure/closet/radiation,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
@@ -1108,20 +1099,37 @@
 /turf/open/floor/iron,
 /area/engineering/main)
 "acg" = (
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible,
-/turf/closed/wall/r_wall,
-/area/engineering/atmos)
+/obj/effect/turf_decal/siding/yellow{
+	color = "#FFD700";
+	dir = 8;
+	name = "engineering yellow"
+	},
+/obj/machinery/computer/atmos_control/incinerator{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
 "ach" = (
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
-/turf/closed/wall/r_wall,
-/area/engineering/atmos)
+/obj/effect/turf_decal/siding/yellow{
+	color = "#FFD700";
+	dir = 8;
+	name = "engineering yellow"
+	},
+/obj/machinery/computer/turbine_computer{
+	dir = 4;
+	id = "incineratorturbine"
+	},
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
 "aci" = (
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
-/turf/closed/wall/r_wall,
-/area/engineering/atmos)
+/obj/effect/turf_decal/siding/yellow{
+	color = "#FFD700";
+	dir = 4;
+	name = "engineering yellow"
+	},
+/obj/structure/extinguisher_cabinet/directional/east,
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
 "acj" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 4
@@ -1220,21 +1228,42 @@
 /turf/closed/wall/r_wall,
 /area/engineering/engine_smes)
 "acz" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/air_input{
-	dir = 1
+/obj/machinery/power/apc{
+	areastring = "/area/maintenance/disposal/incinerator";
+	dir = 8;
+	name = "Incinerator APC";
+	pixel_x = -25;
+	pixel_y = 1
 	},
-/turf/open/floor/engine/air,
-/area/engineering/atmos)
+/obj/effect/turf_decal/siding/yellow{
+	color = "#FFD700";
+	dir = 8;
+	name = "engineering yellow"
+	},
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
 "acA" = (
-/obj/machinery/air_sensor/atmos/air_tank,
-/turf/open/floor/engine/air,
-/area/engineering/atmos)
-"acB" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/siphon/atmos/air_output{
-	dir = 1
+/obj/machinery/airalarm{
+	dir = 8;
+	frequency = 1459;
+	name = "Incinerator Chamber Air control";
+	pixel_x = 24
 	},
-/turf/open/floor/engine/air,
-/area/engineering/atmos)
+/obj/effect/turf_decal/siding/yellow{
+	color = "#FFD700";
+	dir = 4;
+	name = "engineering yellow"
+	},
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
+"acB" = (
+/obj/effect/turf_decal/siding/yellow{
+	color = "#FFD700";
+	dir = 10;
+	name = "engineering yellow"
+	},
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
 "acC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden/layer2{
 	dir = 8
@@ -1364,12 +1393,31 @@
 /turf/closed/wall/r_wall,
 /area/engineering/main)
 "acR" = (
-/turf/open/floor/engine/air,
-/area/engineering/atmos)
+/obj/machinery/computer/security/telescreen/turbine{
+	dir = 1;
+	pixel_y = -30
+	},
+/obj/effect/turf_decal/siding/yellow{
+	color = "#FFD700";
+	name = "engineering yellow"
+	},
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
 "acS" = (
-/obj/machinery/portable_atmospherics/canister/air,
-/turf/open/floor/engine/air,
-/area/engineering/atmos)
+/obj/machinery/button/door/incinerator_vent_atmos_main{
+	pixel_x = -6;
+	pixel_y = -24
+	},
+/obj/machinery/button/door/incinerator_vent_atmos_aux{
+	pixel_x = 6;
+	pixel_y = -24
+	},
+/obj/effect/turf_decal/siding/yellow{
+	color = "#FFD700";
+	name = "engineering yellow"
+	},
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
 "acT" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 9
@@ -1477,29 +1525,52 @@
 /turf/open/floor/plating,
 /area/engineering/main)
 "adn" = (
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/engine/n2,
-/area/engineering/atmos)
+/obj/effect/turf_decal/siding/yellow{
+	color = "#FFD700";
+	name = "engineering yellow"
+	},
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
 "ado" = (
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/engine/o2,
-/area/engineering/atmos)
+/obj/machinery/button/ignition{
+	id = "Incinerator";
+	pixel_x = -6;
+	pixel_y = -24
+	},
+/obj/effect/turf_decal/siding/yellow{
+	color = "#FFD700";
+	dir = 6;
+	name = "engineering yellow"
+	},
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
 "adp" = (
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/engine/air,
-/area/engineering/atmos)
+/obj/machinery/meter,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/turf/open/floor/plating,
+/area/maintenance/disposal/incinerator)
 "adq" = (
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/engine/co2,
-/area/engineering/atmos)
+/obj/machinery/atmospherics/pipe/smart/simple/brown/visible,
+/turf/closed/wall/r_wall,
+/area/maintenance/disposal/incinerator)
 "adr" = (
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/engine/plasma,
-/area/engineering/atmos)
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door/airlock/public/glass/incinerator/atmos_interior,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/machinery/embedded_controller/radio/airlock_controller/incinerator_atmos{
+	pixel_x = 38;
+	pixel_y = 6
+	},
+/obj/structure/cable,
+/obj/structure/fans/tiny,
+/turf/open/floor/engine,
+/area/maintenance/disposal/incinerator)
 "ads" = (
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/engine/n2o,
-/area/engineering/atmos)
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
+/turf/open/space/basic,
+/area/maintenance/disposal/incinerator)
 "adt" = (
 /obj/effect/spawner/structure/window/reinforced/plasma,
 /obj/machinery/atmospherics/pipe/layer_manifold,
@@ -2301,62 +2372,51 @@
 /turf/open/floor/plating,
 /area/engineering/main)
 "afN" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/layer_manifold/cyan/visible,
-/turf/open/floor/plating,
-/area/engineering/atmos/upper)
+/obj/structure/sign/warning/fire{
+	pixel_x = -32
+	},
+/obj/machinery/airlock_sensor/incinerator_atmos{
+	pixel_x = 8;
+	pixel_y = 24
+	},
+/obj/machinery/light/small/directional/west,
+/obj/machinery/atmospherics/pipe/smart/simple/brown/visible,
+/turf/open/floor/engine,
+/area/maintenance/disposal/incinerator)
 "afO" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating,
-/area/engineering/atmos/upper)
+/obj/structure/cable,
+/turf/open/floor/engine,
+/area/maintenance/disposal/incinerator)
 "afP" = (
-/obj/machinery/door/airlock/atmos/glass{
-	name = "Distribution Loop";
-	req_access_txt = "24"
+/obj/structure/sign/warning/fire{
+	pixel_x = 32
+	},
+/obj/machinery/light/small/directional/east,
+/obj/machinery/atmospherics/pipe/smart/simple/brown/visible,
+/turf/open/floor/engine,
+/area/maintenance/disposal/incinerator)
+"afS" = (
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
+/turf/open/space,
+/area/space/nearstation)
+"afU" = (
+/obj/machinery/door/airlock/public/glass/incinerator/atmos_interior{
+	id_tag = "atmos_incinerator_airlock_exterior";
+	name = "Turbine Exterior Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
 	},
 /obj/structure/cable,
-/obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFD700";
-	dir = 1;
-	name = "Engineering yellow corner"
-	},
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFD700";
-	name = "Engineering yellow corner"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"afS" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
-	dir = 5
-	},
-/turf/open/floor/plating,
-/area/engineering/atmos/upper)
-"afU" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/turf/closed/wall/r_wall,
-/area/engineering/atmos/upper)
+/obj/structure/fans/tiny,
+/turf/open/floor/engine,
+/area/maintenance/disposal/incinerator)
 "afW" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/engineering/atmos/upper)
+/obj/machinery/door/poddoor/incinerator_atmos_aux,
+/turf/open/floor/engine/vacuum,
+/area/maintenance/disposal/incinerator)
 "afX" = (
 /obj/effect/turf_decal/siding/yellow{
 	color = "#FFD700";
@@ -2390,84 +2450,64 @@
 /turf/open/floor/engine,
 /area/engineering/main)
 "agg" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/smart/manifold/cyan/visible{
-	dir = 4
+/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/incinerator_input{
+	dir = 1
 	},
-/turf/open/floor/plating,
-/area/engineering/atmos/upper)
+/turf/open/floor/engine/vacuum,
+/area/maintenance/disposal/incinerator)
 "agi" = (
-/obj/structure/closet/crate/internals,
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 9;
-	name = "engineering yellow"
+/obj/machinery/air_sensor/atmos/incinerator_tank{
+	pixel_x = -32;
+	pixel_y = -32
 	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"agj" = (
+/obj/machinery/igniter{
+	id = "Incinerator"
+	},
 /obj/structure/cable,
-/obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 5
+/turf/open/floor/engine/vacuum,
+/area/maintenance/disposal/incinerator)
+"agj" = (
+/obj/structure/sign/warning/vacuum/external{
+	pixel_y = -32
 	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 1;
-	name = "engineering yellow"
+	frequency = 1459
 	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
+/turf/open/floor/engine/vacuum,
+/area/maintenance/disposal/incinerator)
 "agk" = (
-/obj/machinery/meter,
-/obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/visible{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
+/obj/machinery/power/compressor{
+	comp_id = "incineratorturbine";
 	dir = 1;
-	name = "engineering yellow"
+	luminosity = 2
 	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
+/obj/structure/cable,
+/obj/machinery/camera{
+	c_tag = "Atmospherics Turbine";
+	dir = 4;
+	name = "Turbine Camera";
+	network = list("ss13","engineering","atmos")
+	},
+/turf/open/floor/engine/vacuum,
+/area/maintenance/disposal/incinerator)
 "agl" = (
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 8;
-	name = "Waste In"
+/obj/machinery/power/turbine{
+	luminosity = 2
 	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 1;
-	name = "engineering yellow"
-	},
-/obj/machinery/firealarm/directional/north,
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
+/obj/structure/cable,
+/turf/open/floor/engine/vacuum,
+/area/maintenance/disposal/incinerator)
 "agm" = (
-/obj/machinery/meter,
-/obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/visible{
+/obj/machinery/atmospherics/components/unary/outlet_injector/atmos{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 1;
-	name = "engineering yellow"
-	},
-/obj/machinery/airalarm/directional/north,
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
+/turf/open/floor/plating/airless,
+/area/maintenance/disposal/incinerator)
 "ago" = (
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 5;
-	name = "engineering yellow"
-	},
-/obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/visible{
-	dir = 4
-	},
-/obj/machinery/light/directional/east,
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
+/obj/structure/sign/warning/fire,
+/turf/closed/wall/r_wall,
+/area/maintenance/disposal/incinerator)
 "agp" = (
 /obj/effect/turf_decal/siding/yellow{
 	color = "#FFD700";
@@ -2525,1231 +2565,21 @@
 /turf/open/floor/engine,
 /area/engineering/main)
 "agx" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible,
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/engineering/atmos/upper)
-"agy" = (
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 8;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"agz" = (
-/obj/structure/cable,
-/obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
-	dir = 10
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"agA" = (
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 1;
-	name = "Mix to Filter"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"agC" = (
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"agD" = (
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 1;
-	name = "Distro to Waste"
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 6
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"agE" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 4;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"agF" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
-/turf/open/floor/plating,
-/area/engineering/atmos/upper)
-"agG" = (
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 8;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"agH" = (
-/obj/machinery/meter,
-/obj/structure/cable,
-/obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
-	dir = 5
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"agI" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/yellow/visible{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"agJ" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/supply/visible{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"agK" = (
-/obj/machinery/meter,
-/obj/machinery/camera{
-	c_tag = "Atmospherics Air Distribution";
-	dir = 8;
-	name = "Atmos Camera";
-	network = list("ss13","engineering","atmos")
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold/supply/visible{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 4;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"agL" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 10
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/turf/closed/wall/r_wall,
-/area/maintenance/disposal/incinerator)
-"agM" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
-	dir = 10
-	},
-/turf/open/floor/plating,
-/area/maintenance/disposal/incinerator)
-"agO" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating,
-/area/maintenance/disposal/incinerator)
-"agP" = (
-/turf/closed/wall/r_wall,
-/area/maintenance/disposal/incinerator)
-"agS" = (
-/turf/closed/wall/r_wall,
-/area/engineering/transit_tube)
-"agT" = (
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 8;
-	name = "engineering yellow"
-	},
-/obj/machinery/light/directional/west,
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"agU" = (
-/obj/structure/cable,
-/obj/structure/disposalpipe/segment{
-	dir = 5
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"agX" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"agY" = (
-/obj/effect/landmark/start/atmospheric_technician,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"agZ" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/visible,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"aha" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/cable,
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 4;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"ahd" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden/layer2,
-/turf/closed/wall/r_wall,
-/area/maintenance/disposal/incinerator)
-"ahe" = (
-/obj/machinery/camera{
-	c_tag = "Construction Room";
-	dir = 4;
-	name = "Engineering Camera";
-	network = list("ss13","engineering")
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/radiation,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 10
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 9;
-	name = "engineering yellow"
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ahf" = (
-/obj/structure/cable,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/radiation,
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 1;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ahg" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable,
-/obj/structure/closet/secure_closet/atmospherics,
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 1;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ahh" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable,
-/obj/machinery/power/smes{
-	charge = 5e+006
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 1;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ahk" = (
-/obj/machinery/disposal/bin,
-/obj/structure/disposalpipe/trunk,
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 5;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/engineering/transit_tube)
-"ahl" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible,
-/turf/open/floor/plating,
-/area/engineering/atmos/upper)
-"ahm" = (
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 4;
-	name = "Pure to Mix"
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 8;
-	name = "engineering yellow"
-	},
-/obj/machinery/light/directional/west,
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"ahn" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
-	dir = 10
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"aho" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold/yellow/visible{
-	dir = 8
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"ahp" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 4;
-	name = "Mix to Distro"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"ahq" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold/supply/visible{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"ahr" = (
-/obj/structure/cable,
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 4;
-	name = "engineering yellow"
-	},
-/obj/machinery/power/apc{
-	areastring = "/area/engineering/atmos/upper";
-	dir = 4;
-	name = "Atmospherics Upper APC";
-	pixel_x = 25
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"ahs" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/turf/closed/wall/r_wall,
-/area/maintenance/disposal/incinerator)
-"aht" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden/layer4{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 8;
-	name = "engineering yellow"
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden/layer2,
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ahu" = (
-/obj/structure/cable,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden/layer2{
-	dir = 1
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ahv" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 8
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ahw" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable,
-/obj/machinery/power/terminal{
-	dir = 1
-	},
-/obj/machinery/holopad,
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ahx" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment,
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 4;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ahy" = (
-/obj/machinery/meter,
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible,
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"ahz" = (
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 1;
-	name = "Mix Outlet Pump"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"ahA" = (
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 1;
-	name = "Air to Distro"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"ahB" = (
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 4;
-	name = "engineering yellow"
-	},
-/obj/machinery/requests_console/directional/east{
-	department = "Atmospherics";
-	departmentType = 4;
-	name = "Atmos RC"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"ahC" = (
-/obj/machinery/atmospherics/pipe/layer_manifold/supply/visible{
-	dir = 4
-	},
-/turf/closed/wall/r_wall,
-/area/maintenance/disposal/incinerator)
-"ahD" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 8;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ahE" = (
-/obj/structure/cable,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ahF" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable,
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ahG" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable,
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ahI" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment,
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 4;
-	name = "engineering yellow"
-	},
-/obj/machinery/airalarm/directional/east,
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ahJ" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible,
-/turf/open/floor/plating,
-/area/engineering/atmos/upper)
-"ahL" = (
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 4;
-	name = "Unfiltered to Mix"
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 8;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"ahM" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/green/visible,
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"ahN" = (
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 8;
-	name = "Air to Mix"
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"ahO" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/cyan/visible{
-	dir = 1
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"ahQ" = (
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
-	dir = 9
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"ahS" = (
-/obj/machinery/portable_atmospherics/canister,
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 4;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"ahT" = (
-/obj/machinery/door/airlock/atmos{
-	name = "Turbine Access";
-	req_access_txt = "24"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/cable,
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFD700";
-	dir = 1;
-	name = "Engineering yellow corner"
-	},
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFD700";
-	name = "Engineering yellow corner"
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ahU" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/cable,
-/obj/effect/landmark/blobstart,
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
-	dir = 5
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 8;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ahW" = (
-/obj/structure/cable,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ahX" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ahY" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"aia" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 4;
-	name = "engineering yellow"
-	},
-/obj/machinery/light/directional/east,
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"aic" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
-	dir = 10
-	},
-/turf/closed/wall/r_wall,
-/area/maintenance/disposal/incinerator)
-"aid" = (
-/obj/effect/turf_decal/tile/neutral{
-	alpha = 255;
-	color = "#000000";
-	dir = 4;
-	name = "dark corner"
-	},
-/obj/effect/turf_decal/tile/neutral{
-	alpha = 255;
-	color = "#000000";
-	dir = 8;
-	name = "dark corner"
-	},
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFFF00";
-	dir = 1;
-	name = "Maint yellow corner"
-	},
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFFF00";
-	name = "Maint yellow corner"
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 10;
-	name = "engineering yellow"
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
-	dir = 6
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"aif" = (
-/obj/machinery/computer/atmos_control/tank/mix_tank{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral{
-	alpha = 255;
-	color = "#000000";
-	dir = 4;
-	name = "dark corner"
-	},
-/obj/effect/turf_decal/tile/neutral{
-	alpha = 255;
-	color = "#000000";
-	dir = 8;
-	name = "dark corner"
-	},
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFFF00";
-	dir = 1;
-	name = "Maint yellow corner"
-	},
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFFF00";
-	name = "Maint yellow corner"
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	name = "engineering yellow"
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
-	dir = 9
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"aih" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/yellow/visible{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/neutral{
-	alpha = 255;
-	color = "#000000";
-	dir = 4;
-	name = "dark corner"
-	},
-/obj/effect/turf_decal/tile/neutral{
-	alpha = 255;
-	color = "#000000";
-	dir = 8;
-	name = "dark corner"
-	},
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFFF00";
-	dir = 1;
-	name = "Maint yellow corner"
-	},
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFFF00";
-	name = "Maint yellow corner"
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"aii" = (
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 4;
-	name = "Mix to Incinerator"
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"aij" = (
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	name = "engineering yellow"
-	},
-/obj/item/radio/intercom/directional/south,
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"aik" = (
-/obj/structure/sign/warning/nosmoking/circle{
-	pixel_y = -30
-	},
-/obj/machinery/portable_atmospherics/canister,
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 6;
-	name = "engineering yellow"
-	},
-/obj/machinery/light/directional/east,
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
-"ail" = (
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
-	dir = 6
-	},
-/turf/closed/wall/r_wall,
-/area/maintenance/disposal/incinerator)
-"aim" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 8;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ain" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 4;
-	name = "atmospherics mix pump"
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"aio" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/smart/simple/brown/visible{
-	dir = 10
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"aip" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"air" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/portable_atmospherics/canister,
-/obj/machinery/atmospherics/components/unary/portables_connector/visible,
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 4;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"ais" = (
-/obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
-/turf/closed/wall/r_wall,
-/area/maintenance/disposal/incinerator)
-"ait" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/cyan/visible,
-/turf/closed/wall/r_wall,
-/area/engineering/atmos/upper)
-"aiu" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible,
-/obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/engineering/atmos/upper)
-"aiv" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/engineering/atmos/upper)
-"aiw" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
-/obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/engineering/atmos/upper)
-"aix" = (
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
-	dir = 9
-	},
-/turf/closed/wall/r_wall,
-/area/engineering/atmos/upper)
-"aiy" = (
-/turf/closed/wall/r_wall,
-/area/engineering/atmos/upper)
-"aiz" = (
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
-/turf/closed/wall/r_wall,
-/area/maintenance/disposal/incinerator)
-"aiB" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 8;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"aiC" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable,
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 4;
-	name = "Port Out"
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"aiE" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/smart/manifold/brown/visible{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"aiG" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/smart/simple/orange/visible{
-	dir = 6
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"aiH" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 4;
-	name = "engineering yellow"
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/orange/visible{
-	dir = 9
-	},
-/obj/structure/extinguisher_cabinet/directional/east,
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"aiI" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
-/turf/closed/wall/r_wall,
-/area/maintenance/disposal/incinerator)
-"aiJ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/power/apc{
-	areastring = "/area/maintenance/disposal/incinerator";
-	dir = 8;
-	name = "Incinerator APC";
-	pixel_x = -25;
-	pixel_y = 1
-	},
-/obj/structure/cable,
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 8;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"aiK" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"aiL" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/simple/brown/visible,
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"aiM" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable,
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 1;
-	name = "Incinerator to Output"
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"aiN" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/airalarm{
-	dir = 8;
-	frequency = 1459;
-	name = "Incinerator Chamber Air control";
-	pixel_x = 24
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 4;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"aiO" = (
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
-	dir = 9
-	},
-/turf/closed/wall/r_wall,
-/area/maintenance/disposal/incinerator)
-"aiQ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/computer/turbine_computer{
-	dir = 1;
-	id = "incineratorturbine"
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 6
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 10;
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"aiR" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/computer/atmos_control/incinerator{
-	dir = 1
-	},
-/obj/machinery/computer/security/telescreen/turbine{
-	dir = 1;
-	pixel_y = -30
-	},
-/obj/machinery/atmospherics/pipe/bridge_pipe/scrubbers/visible{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	name = "engineering yellow"
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"aiS" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/button/door/incinerator_vent_atmos_main{
-	pixel_x = -6;
-	pixel_y = -24
-	},
-/obj/machinery/button/door/incinerator_vent_atmos_aux{
-	pixel_x = 6;
-	pixel_y = -24
-	},
-/obj/structure/cable,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	name = "engineering yellow"
-	},
-/obj/machinery/atmospherics/pipe/bridge_pipe/brown/visible,
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"aiT" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/components/trinary/filter{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	name = "engineering yellow"
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"aiV" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/button/ignition{
-	id = "Incinerator";
-	pixel_x = -6;
-	pixel_y = -24
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/yellow{
-	color = "#FFD700";
-	dir = 6;
-	name = "engineering yellow"
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/brown/visible{
-	dir = 10
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"aiW" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/machinery/meter,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
-/turf/open/floor/plating,
-/area/maintenance/disposal/incinerator)
-"aiY" = (
-/obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/hidden,
-/turf/closed/wall/r_wall,
-/area/maintenance/disposal/incinerator)
-"aiZ" = (
-/obj/machinery/atmospherics/pipe/smart/simple/brown/visible,
-/turf/closed/wall/r_wall,
-/area/maintenance/disposal/incinerator)
-"aja" = (
-/obj/effect/mapping_helpers/airlock/locked,
-/obj/machinery/door/airlock/public/glass/incinerator/atmos_interior,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper,
-/obj/machinery/embedded_controller/radio/airlock_controller/incinerator_atmos{
-	pixel_x = 38;
-	pixel_y = 6
-	},
-/obj/structure/cable,
-/turf/open/floor/engine,
-/area/maintenance/disposal/incinerator)
-"ajb" = (
-/obj/machinery/atmospherics/pipe/layer_manifold/supply/hidden,
-/turf/closed/wall/r_wall,
-/area/maintenance/disposal/incinerator)
-"ajc" = (
-/obj/structure/lattice,
-/obj/machinery/atmospherics/components/binary/pump/on{
-	name = "Incinerator Output Pump";
-	target_pressure = 4500
-	},
-/turf/open/space/basic,
-/area/maintenance/disposal/incinerator)
-"ajd" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden{
-	dir = 5
-	},
-/turf/closed/wall/r_wall,
-/area/maintenance/disposal/incinerator)
-"aje" = (
-/obj/structure/sign/warning/fire{
-	pixel_x = -32
-	},
-/obj/machinery/airlock_sensor/incinerator_atmos{
-	pixel_x = 8;
-	pixel_y = 24
-	},
-/obj/machinery/atmospherics/components/binary/pump/on,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden{
-	dir = 4
-	},
-/obj/machinery/light/small/directional/west,
-/turf/open/floor/engine,
-/area/maintenance/disposal/incinerator)
-"ajf" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/incinerator_atmos{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/maintenance/disposal/incinerator)
-"ajg" = (
-/obj/structure/sign/warning/fire{
-	pixel_x = 32
-	},
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/light/small/directional/east,
-/turf/open/floor/engine,
-/area/maintenance/disposal/incinerator)
-"ajh" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
-	dir = 9
-	},
-/turf/closed/wall/r_wall,
-/area/maintenance/disposal/incinerator)
-"aji" = (
-/obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
-/turf/open/space,
-/area/space/nearstation)
-"ajj" = (
-/obj/machinery/door/airlock/public/glass/incinerator/atmos_interior{
-	id_tag = "atmos_incinerator_airlock_exterior";
-	name = "Turbine Exterior Airlock"
-	},
-/obj/effect/mapping_helpers/airlock/locked,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
-	},
-/obj/structure/cable,
-/turf/open/floor/engine,
-/area/maintenance/disposal/incinerator)
-"ajk" = (
-/obj/machinery/door/poddoor/incinerator_atmos_aux,
-/turf/open/floor/engine/vacuum,
-/area/maintenance/disposal/incinerator)
-"ajl" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/incinerator_input{
-	dir = 1
-	},
-/turf/open/floor/engine/vacuum,
-/area/maintenance/disposal/incinerator)
-"ajm" = (
-/obj/machinery/air_sensor/atmos/incinerator_tank{
-	pixel_x = -32;
-	pixel_y = -32
-	},
-/obj/machinery/igniter{
-	id = "Incinerator"
-	},
-/obj/structure/cable,
-/turf/open/floor/engine/vacuum,
-/area/maintenance/disposal/incinerator)
-"ajn" = (
-/obj/structure/sign/warning/vacuum/external{
-	pixel_y = -32
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 1;
-	frequency = 1459
-	},
-/turf/open/floor/engine/vacuum,
-/area/maintenance/disposal/incinerator)
-"ajp" = (
-/obj/machinery/power/compressor{
-	comp_id = "incineratorturbine";
-	dir = 1;
-	luminosity = 2
-	},
-/obj/structure/cable,
-/obj/machinery/camera{
-	c_tag = "Atmospherics Turbine";
-	dir = 4;
-	name = "Turbine Camera";
-	network = list("ss13","engineering","atmos")
-	},
-/turf/open/floor/engine/vacuum,
-/area/maintenance/disposal/incinerator)
-"ajq" = (
-/obj/machinery/power/turbine{
-	luminosity = 2
-	},
-/obj/structure/cable,
-/turf/open/floor/engine/vacuum,
-/area/maintenance/disposal/incinerator)
-"ajr" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos{
-	dir = 1
-	},
-/turf/open/floor/plating/airless,
-/area/maintenance/disposal/incinerator)
-"ajs" = (
-/obj/structure/sign/warning/fire,
-/turf/closed/wall/r_wall,
-/area/maintenance/disposal/incinerator)
-"ajt" = (
 /obj/machinery/door/poddoor/incinerator_atmos_main,
 /turf/open/floor/engine/vacuum,
 /area/maintenance/disposal/incinerator)
-"aju" = (
+"agy" = (
 /obj/structure/lattice,
 /turf/open/space,
 /area/space/nearstation)
-"ajv" = (
+"agz" = (
+/obj/structure/lattice,
+/turf/open/space/basic,
+/area/space/nearstation)
+"agA" = (
 /obj/structure/lattice/catwalk,
 /turf/open/space,
 /area/space/nearstation)
-"azn" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating,
-/area/maintenance/solars/port/aft)
 "bJp" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/layer2{
 	dir = 1
@@ -3784,24 +2614,11 @@
 /obj/machinery/atmospherics/components/binary/volume_pump/layer2,
 /turf/open/floor/iron,
 /area/engineering/atmos)
-"cwK" = (
-/obj/machinery/door/airlock/external{
-	name = "Atmospherics External Airlock";
-	req_access_txt = "24"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/engineering/atmos)
 "czb" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/engineering/main)
-"cAx" = (
-/turf/open/floor/plating,
-/area/engineering/atmos)
 "cBL" = (
 /obj/machinery/computer/atmos_control/tank/oxygen_tank{
 	dir = 1
@@ -3838,10 +2655,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/engineering/atmos)
-"cCZ" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
-/turf/open/floor/plating,
-/area/engineering/lobby)
 "cDU" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible,
 /obj/effect/turf_decal/tile/red{
@@ -4170,10 +2983,6 @@
 "cIK" = (
 /obj/machinery/portable_atmospherics/canister/nitrous_oxide,
 /turf/open/floor/engine/n2o,
-/area/engineering/atmos)
-"cIT" = (
-/obj/machinery/door/airlock/atmos/glass,
-/turf/open/floor/iron,
 /area/engineering/atmos)
 "cIW" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
@@ -5166,15 +3975,10 @@
 /turf/open/floor/engine,
 /area/engineering/main)
 "cXT" = (
-/obj/machinery/door/airlock/external{
-	name = "Atmospherics External Airlock";
-	req_access_txt = "24"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
+/obj/machinery/door/airlock/atmos/glass,
+/obj/structure/fans/tiny,
 /turf/open/space/basic,
-/turf/open/floor/plating,
+/turf/open/floor/iron,
 /area/engineering/atmos)
 "dVH" = (
 /obj/machinery/suit_storage_unit/atmos,
@@ -5191,14 +3995,9 @@
 /turf/open/floor/iron,
 /area/engineering/atmos/project)
 "fuF" = (
-/obj/machinery/door/airlock/external{
-	name = "Atmospherics Internal Airlock";
-	req_access_txt = "24"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
-/turf/open/floor/plating,
+/obj/machinery/door/airlock/atmos/glass,
+/obj/structure/fans/tiny,
+/turf/open/floor/iron,
 /area/engineering/atmos)
 "fBe" = (
 /obj/machinery/portable_atmospherics/canister/bz,
@@ -5284,6 +4083,7 @@
 /area/engineering/atmos)
 "liq" = (
 /obj/machinery/door/airlock/atmos/glass,
+/obj/structure/fans/tiny,
 /turf/open/floor/iron,
 /area/engineering/atmos/project)
 "ltN" = (
@@ -5293,7 +4093,7 @@
 "miL" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible,
 /turf/open/space/basic,
-/area/space/nearstation)
+/area/engineering/atmos)
 "mnv" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/nitrogen_output{
 	dir = 1
@@ -5333,10 +4133,6 @@
 	},
 /turf/open/floor/plating,
 /area/engineering/main)
-"nAf" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating,
-/area/engineering/atmos)
 "nAj" = (
 /obj/effect/turf_decal/bot/right,
 /turf/open/floor/iron,
@@ -5516,11 +4312,11 @@
 /area/engineering/atmos/project)
 "wOw" = (
 /turf/open/space/basic,
-/area/space/nearstation)
+/area/engineering/atmos)
 "wYV" = (
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
 /turf/open/space/basic,
-/area/space/nearstation)
+/area/engineering/atmos)
 "xjf" = (
 /obj/effect/spawner/structure/window/reinforced/plasma,
 /turf/open/floor/plating,
@@ -5997,7 +4793,7 @@ aaa
 aaa
 aaa
 aaa
-aaj
+aaa
 aaa
 aaa
 aaa
@@ -6254,7 +5050,7 @@ aaa
 aaa
 aaa
 aaa
-aac
+aaa
 aaa
 aaa
 aaa
@@ -6511,7 +5307,7 @@ aaa
 aaa
 aaa
 aaa
-aac
+aaa
 aaa
 aaa
 aaa
@@ -6762,19 +5558,19 @@ aaa
 aaa
 aaa
 aaa
-aab
-aab
-aab
-aab
-aab
 aaa
-aac
 aaa
-aab
-aab
-aab
-aab
-aab
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -7018,21 +5814,21 @@ aaa
 aaa
 aaa
 aaa
-aab
-aac
-aac
-aac
-aac
-aac
-aac
-aac
-aac
-aac
-aac
-aac
-aac
-aac
-aab
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -7276,19 +6072,19 @@ aaa
 aaa
 aaa
 aaa
-aab
-aab
-aab
-aab
-aab
 aaa
-aac
 aaa
-aab
-aab
-aab
-aab
-aab
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -7533,19 +6329,19 @@ aaa
 aaa
 aaa
 aaa
-aab
-aab
-aab
-aab
-aab
 aaa
-aac
 aaa
-aab
-aab
-aab
-aab
-aab
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -7789,21 +6585,21 @@ aaa
 aaa
 aaa
 aaa
-aab
-aac
-aac
-aac
-aac
-aac
-aah
-aac
-aah
-aac
-aac
-aac
-aac
-aac
-aab
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -8047,19 +6843,19 @@ aaa
 aaa
 aaa
 aaa
-aab
-aab
-aab
-aab
-aab
 aaa
-aac
 aaa
-aab
-aab
-aab
-aab
-aab
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -8304,19 +7100,19 @@ aaa
 aaa
 aaa
 aaa
-aab
-aab
-aab
-aab
-aab
 aaa
-aac
 aaa
-aab
-aab
-aab
-aab
-aab
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -8560,21 +7356,21 @@ aaa
 aaa
 aaa
 aaa
-aab
-aac
-aac
-aac
-aac
-aac
-aac
-aac
-aac
-aac
-aac
-aac
-aac
-aac
-aab
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -8818,19 +7614,19 @@ aaa
 aaa
 aaa
 aaa
-aab
-aab
-aab
-aab
-aab
 aaa
-aac
 aaa
-aab
-aab
-aab
-aab
-aab
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -9081,7 +7877,7 @@ aaa
 aaa
 aaa
 aaa
-aac
+aaa
 aaa
 aaa
 aaa
@@ -9338,7 +8134,7 @@ aaa
 aaa
 aaa
 aaa
-aac
+aaa
 aaa
 aaa
 aaa
@@ -9595,7 +8391,7 @@ aaa
 aaa
 aaa
 aaa
-aac
+aaa
 aaa
 aaa
 aaa
@@ -9851,9 +8647,9 @@ aaa
 aaa
 aaa
 aaa
-azn
-aal
-azn
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -10108,9 +8904,9 @@ aaa
 aaa
 aaa
 aaa
-azn
-aam
-azn
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -10365,9 +9161,9 @@ aaa
 aaa
 aaa
 aaa
-azn
-aam
-azn
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -10621,10 +9417,10 @@ aaa
 aaa
 aaa
 aaa
-aad
-azn
-aan
-azn
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -23244,9 +22040,9 @@ aaa
 aaa
 aaa
 aaa
-nAf
-cwK
-nAf
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -23501,9 +22297,9 @@ aaa
 aaa
 aaa
 aaa
-nAf
-cAx
-nAf
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -23758,9 +22554,6 @@ aaa
 aaa
 aaa
 aaa
-nAf
-cAx
-nAf
 aaa
 aaa
 aaa
@@ -23791,16 +22584,19 @@ aaa
 aaa
 aaa
 aaa
-agL
-ahd
-ahs
-ahC
-ahT
-ail
-aiz
-aiz
-aiO
-agP
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -24015,9 +22811,6 @@ aaa
 aaa
 aaa
 aaa
-nAf
-fuF
-nAf
 aaa
 aaa
 aaa
@@ -24048,24 +22841,27 @@ aaa
 aaa
 aaa
 aaa
-agM
-ahe
-aht
-ahD
-ahU
-aim
-aiB
-aiJ
-aiQ
-aiW
-ajc
-aji
-aji
-aji
-aji
-ajr
-aju
-abO
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -24305,24 +23101,24 @@ aaa
 aaa
 aaa
 aaa
-agO
-ahf
-ahu
-ahE
-ahW
-ain
-aiC
-aiK
-aiR
-aiY
-ajd
-agP
-ajk
-agP
-cUP
-cUP
-cUP
-ajv
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -24562,24 +23358,24 @@ aaa
 aaa
 aaa
 aaa
-agP
-ahg
-ahv
-ahF
-ahX
-aio
-aiE
-aiL
-aiS
-aiZ
-aje
-aiZ
-ajl
-agP
-agP
-ajs
 aaa
-ajv
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -24819,24 +23615,24 @@ aaa
 aaa
 aaa
 aaa
-agP
-ahh
-ahw
-ahG
-ahY
-aip
-aiG
-aiM
-aiT
-aja
-ajf
-ajj
-ajm
-ajp
-ajq
-ajt
 aaa
-ajv
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -25076,24 +23872,24 @@ aaa
 aaa
 aaa
 aaa
-agS
-ahk
-ahx
-ahI
-aia
-air
-aiH
-aiN
-aiV
-aiZ
-ajg
-aiZ
-ajn
-agP
-agP
-ajs
 aaa
-ajv
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -25305,15 +24101,6 @@ aaa
 aaa
 aaa
 aaa
-abj
-abw
-abI
-cKh
-cKh
-cKh
-cKh
-cKh
-abO
 aaa
 aaa
 aaa
@@ -25333,24 +24120,33 @@ aaa
 aaa
 aaa
 aaa
-agS
-agS
-agP
-agP
-aic
-ais
-aiI
-aiI
-aiI
-ajb
-ajh
-agP
-agP
-agP
-cUP
-cUP
-cUP
-ajv
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -25562,15 +24358,15 @@ aaa
 aaa
 aaa
 aaa
-abk
-abx
-abJ
-acg
-cHr
-cJL
-cJL
-cKh
-abO
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -25819,15 +24615,15 @@ aaa
 aaa
 aaa
 aaa
-abk
-nAf
-abI
-cKj
-cHs
-cIW
-adn
-cKh
-abO
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -26076,15 +24872,15 @@ aaa
 aaa
 aaa
 aaa
-abk
-aby
-abK
-ach
-mnv
-cJL
-cJL
-cKh
-abO
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -26333,15 +25129,15 @@ aaa
 aaa
 aaa
 aaa
-abk
-coW
-abI
-cKh
-cKh
-cKh
-cKh
-cKh
-abO
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -26590,15 +25386,15 @@ aaa
 aaa
 aaa
 aaa
-abk
-abx
-abJ
-acg
-cHY
-cKs
-cKs
-cKh
-abO
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -26847,15 +25643,15 @@ aaa
 aaa
 aaa
 aaa
-abk
-nAf
-abI
-cKj
-aau
-aaw
-ado
-cKh
-abO
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -27104,15 +25900,15 @@ aaa
 aaa
 aaa
 aaa
-abk
-aby
-abK
-ach
-igc
-cKs
-cKs
-cKh
-abO
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -27361,15 +26157,15 @@ aaa
 aaa
 aaa
 aaa
-abk
-coW
-abI
-cKh
-cKh
-cKh
-cKh
-cKh
-abO
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -27618,15 +26414,15 @@ aaa
 aaa
 aaa
 aaa
-abk
-abz
-abL
-aci
-acz
-acR
-acR
-cKh
-abO
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -27875,15 +26671,15 @@ aaa
 aaa
 aaa
 aaa
-abk
-nAf
-abI
-cKj
-acA
-acS
-adp
-cKh
-abO
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -28132,15 +26928,6 @@ aaa
 aaa
 aaa
 aaa
-abk
-abz
-abL
-aci
-acB
-acR
-acR
-cKh
-abO
 aaa
 aaa
 aaa
@@ -28156,16 +26943,25 @@ aaa
 aaa
 aaa
 aaa
-afN
-agg
-agx
-agF
-agF
-ahl
-agF
-ahJ
-agF
-ait
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -28389,15 +27185,6 @@ aaa
 aaa
 aaa
 aaa
-abk
-coW
-abI
-cKh
-cKh
-cKh
-cKh
-cKh
-abO
 aaa
 aaa
 aaa
@@ -28413,16 +27200,25 @@ aaa
 aaa
 aaa
 aaa
-afO
-agi
-agy
-agG
-agT
-ahm
-agG
-ahL
-aid
-aiu
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -28646,15 +27442,6 @@ aaa
 aaa
 aaa
 aaa
-abk
-abx
-abJ
-acg
-kWe
-cIB
-cIB
-cKh
-abO
 aaa
 aaa
 aaa
@@ -28670,16 +27457,25 @@ aaa
 aaa
 aaa
 aaa
-afP
-agj
-agz
-agH
-agU
-ahn
-ahy
-ahM
-aif
-aiv
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -28903,15 +27699,6 @@ aaa
 aaa
 aaa
 aaa
-abk
-abA
-abI
-cKj
-cHC
-cIC
-adq
-cKh
-abO
 aaa
 aaa
 aaa
@@ -28927,16 +27714,25 @@ aaa
 aaa
 aaa
 aaa
-afS
-agk
-agA
-agI
-agX
-aho
-ahz
-ahN
-aih
-aiw
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -29160,15 +27956,6 @@ aaa
 aaa
 aaa
 aaa
-abk
-abB
-abK
-ach
-cHD
-cIB
-cIB
-cKh
-abO
 aaa
 aaa
 aaa
@@ -29184,16 +27971,25 @@ aaa
 aaa
 aaa
 aaa
-afU
-agl
-agC
-agC
-agY
-ahp
-agC
-ahO
-aii
-aix
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -29394,7 +28190,7 @@ crj
 crj
 crj
 crj
-cIT
+fuF
 crj
 crj
 crj
@@ -29417,15 +28213,6 @@ aaa
 aaa
 aaa
 aaa
-abk
-abC
-abI
-cKh
-cKh
-cKh
-cKh
-cKh
-abO
 aaa
 aaa
 aaa
@@ -29441,16 +28228,25 @@ aaa
 aaa
 aaa
 aaa
-afU
-agm
-agD
-agJ
-agZ
-ahq
-ahA
-ahQ
-aij
-aiy
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -29674,15 +28470,6 @@ aaa
 aaa
 aaa
 aaa
-abk
-abD
-abJ
-acg
-cJk
-cIH
-cIH
-cKh
-abO
 aaa
 aaa
 aaa
@@ -29698,16 +28485,25 @@ aaa
 aaa
 aaa
 aaa
-afW
-ago
-agE
-agK
-aha
-ahr
-ahB
-ahS
-aik
-aiy
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -29931,15 +28727,15 @@ aaa
 aaa
 aaa
 aaa
-abk
-abE
-abI
-cKj
-aav
-cIG
-adr
-cKh
-abO
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -30188,15 +28984,15 @@ aaa
 aaa
 aaa
 aaa
-abk
-abB
-abK
-ach
-cHI
-cIH
-cIH
-cKh
-abO
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -30445,15 +29241,15 @@ aaa
 aaa
 aaa
 aaa
-abk
-abF
-abM
-cKh
-cKh
-cKh
-cKh
-cKh
-abO
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -30702,15 +29498,15 @@ aaa
 aaa
 aaa
 aaa
-abk
-abD
-abN
-acg
-cHK
-cKp
-cKp
-cKh
-abO
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -30959,15 +29755,15 @@ aaa
 aaa
 aaa
 aaa
-abk
-abE
-abO
-cKj
-cHL
-cIK
-ads
-cKh
-abO
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -31216,15 +30012,15 @@ aaa
 aaa
 aaa
 aaa
-abk
-abB
-abU
-ach
-cJo
-cKp
-cKp
-cKh
-abO
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -31475,13 +30271,13 @@ aaa
 aaa
 aaa
 aaa
-abO
-cKh
-cKh
-cKh
-cKh
-cKh
-abO
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -32488,21 +31284,21 @@ crj
 crj
 crj
 crj
-cvb
-cvb
-cvb
 crj
 crj
-cKj
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+crj
+crj
+crj
+abz
+abz
+abz
+abz
+abz
+abA
+abz
+abz
+abz
+abz
 aaa
 aaa
 aaa
@@ -32745,29 +31541,29 @@ crj
 crj
 crj
 crj
-noU
-cvb
-dVH
 crj
 crj
-coW
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+crj
+crj
+crj
+abA
+abD
+abK
+abK
+abK
+acg
+ach
+acz
+acB
+adp
+ads
+afS
+afS
+afS
+afS
+agm
+agy
+agz
 aaa
 aaa
 aaa
@@ -33002,29 +31798,29 @@ crj
 crj
 crj
 crj
-noU
-cvb
-dVH
 crj
 crj
-cKj
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+crj
+crj
+crj
+abA
+abE
+abL
+abL
+abL
+abL
+abL
+abL
+acR
+abz
+abz
+abz
+afW
+abz
+cUP
+cUP
+cUP
+agA
 aaa
 aaa
 aaa
@@ -33259,29 +32055,29 @@ crj
 crj
 aao
 crj
-nEy
-cvb
-dVH
 crj
 crj
-cKj
+aby
+crj
+crj
+abB
+abE
+abL
+abL
+abL
+abL
+abL
+abL
+acS
+adq
+afN
+adq
+agg
+abz
+abz
+ago
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+agA
 aaa
 aaa
 aaa
@@ -33516,29 +32312,29 @@ cwD
 bJp
 crj
 crj
-noU
-cvb
-dVH
 crj
 crj
-cKj
+crj
+crj
+crj
+abA
+abE
+abL
+abL
+abL
+abL
+abL
+abL
+adn
+adr
+afO
+afU
+agi
+agk
+agl
+agx
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+agA
 aaa
 aaa
 aaa
@@ -33773,29 +32569,29 @@ crj
 crj
 crj
 crj
-noU
-cvb
-dVH
 crj
 crj
-coW
+crj
+crj
+crj
+abA
+abF
+abM
+abN
+abU
+abM
+aci
+acA
+ado
+adq
+afP
+adq
+agj
+abz
+abz
+ago
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+agA
 aaa
 aaa
 aaa
@@ -34030,29 +32826,29 @@ crj
 crj
 crj
 crj
-cvb
-cvb
-cvb
 crj
 crj
-cKj
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+crj
+crj
+crj
+abz
+abz
+abz
+abz
+abz
+abA
+abz
+abz
+abz
+abz
+abz
+abz
+abz
+abz
+cUP
+cUP
+cUP
+agA
 aaa
 aaa
 aaa
@@ -36035,15 +34831,15 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+pQK
+pQK
+ltN
+ltN
+ltN
+ltN
+ltN
+pQK
+pQK
 aaa
 aaa
 aaa
@@ -36291,23 +35087,23 @@ aaa
 aaa
 aaa
 aaa
+ltN
+pQK
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+pQK
+ltN
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+ltN
+afB
+ltN
 aaa
 aaa
 aaa
@@ -36545,26 +35341,26 @@ aaa
 aaa
 aaa
 aaa
+pQK
+pQK
+cTt
+ltN
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+ltN
+ltN
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+ltN
+cVs
+ltN
 aaa
 aaa
 aaa
@@ -36802,26 +35598,26 @@ aaa
 aaa
 aaa
 aaa
+pQK
+pQK
+pQK
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+pQK
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+ltN
+cVs
+ltN
 aaa
 aaa
 aaa
@@ -37051,42 +35847,42 @@ aaa
 aaa
 aaa
 aaa
+pQK
+pQK
+pQK
+pQK
+pQK
+pQK
+pQK
+pQK
+pQK
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+pQK
+ltN
+ltN
+afC
+ltN
+ltN
+pQK
+pQK
+pQK
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+aaS
+aaT
+aaS
 aaa
 cKj
 crj
@@ -37104,7 +35900,7 @@ crj
 crj
 crj
 crj
-cIT
+fuF
 crj
 crj
 crj
@@ -37308,42 +36104,42 @@ aaa
 aaa
 aaa
 aaa
+pQK
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+pQK
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+afg
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+pQK
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+aaS
+aaU
+aaS
 aaa
 cKj
 crj
@@ -37565,42 +36361,42 @@ aaa
 aaa
 aaa
 aaa
+pQK
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+pQK
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cUw
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+ltN
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+aaS
+aaU
+aaS
 aaa
 cKj
 crj
@@ -37822,62 +36618,62 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+pQK
+cTb
+cVG
+cVG
+cVG
+cVG
+cVG
+cTb
+ltN
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+afg
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+ltN
+cEP
+aaS
+aaV
+aaS
+cEP
 coW
 cKj
 cKj
 cKj
 cKj
-nAf
+coW
 cXT
-nAf
+coW
 cKj
 cKj
 cKj
 cKj
 coW
 coW
-cIT
+fuF
 cKj
 cKj
 cKj
-cIT
+fuF
 coW
 cKj
 cKj
@@ -38079,56 +36875,56 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-nAf
-cAx
-nAf
-aaa
-aaa
-aaa
-aaa
-cEP
+pQK
+cTb
+cVG
+cVs
+cVG
+cVs
+cVG
+cTb
+acn
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+ltN
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+ltN
+rRf
+rRf
+rRf
+rRf
+mtQ
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
 rRf
 rRf
 rRf
@@ -38336,56 +37132,56 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-nAf
-cAx
-nAf
-aaa
-aaa
-aaa
-aaa
-cEP
+pQK
+cTb
+cVG
+cVs
+cVG
+cVs
+cVG
+cTb
+ltN
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+ltN
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+pQK
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
 rRf
 cJE
 cJE
@@ -38593,56 +37389,56 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-nAf
-fuF
-nAf
-aaa
-aaa
-aaa
-aaa
-cEP
+pQK
+cTb
+cVG
+cVs
+cVG
+cVs
+cVG
+cTb
+ltN
+cTb
+cTb
+cTb
+pQK
+aac
+aah
+aal
+eEO
+cSs
+cSs
+cTb
+cTb
+cTb
+cTb
+pQK
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+pQK
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
 rRf
 cJE
 cJE
@@ -38850,56 +37646,56 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-cCZ
+pQK
+cTb
+cVG
+cVs
+cVG
+cVs
+cVG
+cTb
+ltN
+cTb
+cTb
+cTb
+pQK
+cSA
+cSA
+cSA
+cSs
+aan
+cSs
+cTb
+cTb
+cTb
+cTb
+ltN
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+ltN
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
 rRf
 rRf
 rRf
@@ -39107,59 +37903,59 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-cCZ
+pQK
+cTb
+cVs
+cVs
+cVs
+cVs
+cVs
+cTb
+acn
+cTb
+cTb
+cTb
+ltN
+cSA
+aer
+cSA
+cRs
+cSA
+aec
+cTb
+cTb
+cTb
+cTb
+ltN
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+ltN
 rRf
 rRf
 rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+abx
 rRf
 rRf
 rRf
@@ -39364,56 +38160,56 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-cCZ
+pQK
+cTb
+cVs
+cVs
+cVs
+cVs
+cVG
+cTb
+ltN
+cTb
+cTb
+cTb
+pQK
+cSA
+cSA
+cSA
+cSs
+abj
+cSs
+cTb
+cTb
+cTb
+cTb
+ltN
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+ltN
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
 rRf
 rRf
 rRf
@@ -39621,56 +38417,56 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-nAf
-cwK
-nAf
-aaa
-aaa
-aaa
-aaa
-cEP
+pQK
+cTb
+cVG
+cVs
+cVG
+cVs
+cVG
+cTb
+ltN
+cTb
+cTb
+cTb
+pQK
+aad
+aaj
+aam
+cRu
+cSs
+cSs
+cTb
+cTb
+cTb
+cTb
+pQK
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+pQK
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
 rRf
 cJE
 cJE
@@ -39878,56 +38674,56 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-nAf
-cAx
-nAf
-aaa
-aaa
-aaa
-aaa
-cEP
+pQK
+cTb
+cVG
+cVs
+afA
+cVs
+cVG
+cTb
+ltN
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+ltN
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+pQK
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
 rRf
 cJE
 cJE
@@ -40135,56 +38931,56 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-nAf
-cAx
-nAf
-aaa
-aaa
-aaa
-aaa
-cEP
+pQK
+cTb
+cVG
+cVs
+afH
+cVs
+cVG
+cTb
+aco
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+ltN
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+ltN
+rRf
+rRf
+rRf
+rRf
+mtQ
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
+rRf
 rRf
 rRf
 rRf
@@ -40392,62 +39188,62 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+pQK
+cTb
+afA
+afH
+cVG
+cVG
+cVG
+cTb
+ltN
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+afg
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+ltN
+cEP
+aaS
+aaT
+aaS
+cEP
 coW
 cKj
 cKj
 cKj
 cKj
-nAf
+coW
 fuF
-nAf
+coW
 cKj
 cKj
 cKj
 cKj
 coW
 coW
-cIT
+fuF
 cKj
 cKj
 cKj
-cIT
+fuF
 coW
 cKj
 cKj
@@ -40649,42 +39445,42 @@ aaa
 aaa
 aaa
 aaa
+pQK
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+pQK
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+afh
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+ltN
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+aaS
+aaU
+aaS
 aaa
 cKj
 crj
@@ -40906,42 +39702,42 @@ aaa
 aaa
 aaa
 aaa
+pQK
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+ltN
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+afg
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+pQK
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+aaS
+aaU
+aaS
 aaa
 cKj
 crj
@@ -41163,42 +39959,42 @@ aaa
 aaa
 aaa
 aaa
+pQK
+pQK
+pQK
+pQK
+pQK
+pQK
+pQK
+pQK
+pQK
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+pQK
+pQK
+pQK
+ltN
+ltN
+ltN
+pQK
+pQK
+pQK
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+aaS
+aaV
+aaS
 aaa
 cKj
 crj
@@ -41216,7 +40012,7 @@ crj
 crj
 crj
 crj
-cIT
+fuF
 crj
 crj
 crj
@@ -41428,23 +40224,23 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+pQK
+pQK
+pQK
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+pQK
+pQK
+abw
 aaa
 aaa
 aaa
@@ -41685,23 +40481,23 @@ aaa
 aaa
 aaa
 aaa
+aab
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+ltN
+ltN
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+ltN
+ltN
+abk
+guj
 aaa
 aaa
 aaa
@@ -41942,20 +40738,20 @@ aaa
 aaa
 aaa
 aaa
+aab
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+ltN
+pQK
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+cTb
+pQK
+ltN
 aaa
 aaa
 aaa
@@ -42199,19 +40995,19 @@ aaa
 aaa
 aaa
 aaa
+aab
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+pQK
+pQK
+ltN
+ltN
+ltN
+ltN
+ltN
+pQK
+pQK
 aaa
 aaa
 aaa
@@ -42518,11 +41314,11 @@ vwR
 crj
 coW
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+coW
+coW
+coW
+coW
+coW
 aaa
 aaa
 aaa
@@ -42774,12 +41570,12 @@ vwR
 vwR
 crj
 cKj
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+abI
+abI
+abO
+abO
+abO
+coW
 aaa
 aaa
 aaa
@@ -43030,13 +41826,13 @@ crj
 crj
 crj
 crj
-cKj
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+abC
+abJ
+abC
+abO
+abO
+abO
+coW
 aaa
 aaa
 aaa
@@ -43288,12 +42084,12 @@ stj
 stj
 crj
 cKj
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+abI
+abI
+abO
+abO
+abO
+coW
 aaa
 aaa
 aaa
@@ -43546,11 +42342,11 @@ stj
 crj
 coW
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+coW
+coW
+coW
+coW
+coW
 aaa
 aaa
 aaa
@@ -43802,12 +42598,12 @@ crj
 crj
 crj
 cKj
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+abI
+abI
+abO
+abO
+abO
+coW
 aaa
 aaa
 aaa
@@ -44058,13 +42854,13 @@ crj
 crj
 crj
 crj
-cKj
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+abC
+abJ
+abC
+abO
+abO
+abO
+coW
 aaa
 aaa
 aaa
@@ -44310,18 +43106,18 @@ crj
 crj
 crj
 crj
-cvb
-cvb
-cvb
+crj
+crj
+crj
 crj
 crj
 cKj
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+abI
+abI
+abO
+abO
+abO
+coW
 aaa
 aaa
 aaa
@@ -44567,18 +43363,18 @@ crj
 crj
 crj
 crj
-noU
-cvb
-dVH
+crj
+crj
+crj
 crj
 crj
 coW
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+coW
+coW
+coW
+coW
+coW
 aaa
 aaa
 aaa
@@ -44824,18 +43620,18 @@ crj
 crj
 crj
 crj
-noU
-cvb
-dVH
+crj
+crj
+crj
 crj
 crj
 cKj
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+abI
+abI
+abO
+abO
+abO
+coW
 aaa
 aaa
 aaa
@@ -45081,18 +43877,18 @@ crj
 crj
 aao
 crj
-nEy
-cvb
-dVH
 crj
 crj
-cKj
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+aby
+crj
+crj
+abC
+abJ
+abC
+abO
+abO
+abO
+coW
 aaa
 aaa
 aaa
@@ -45338,18 +44134,18 @@ crj
 crj
 crj
 crj
-noU
-cvb
-dVH
+crj
+crj
+crj
 crj
 crj
 cKj
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+abI
+abI
+abO
+abO
+abO
+coW
 aaa
 aaa
 aaa
@@ -45595,18 +44391,18 @@ crj
 crj
 crj
 crj
-noU
-cvb
-dVH
+crj
+crj
+crj
 crj
 crj
 coW
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+coW
+coW
+coW
+coW
+coW
 aaa
 aaa
 aaa
@@ -45852,18 +44648,18 @@ crj
 crj
 crj
 crj
-cvb
-cvb
-cvb
+crj
+crj
+crj
 crj
 crj
 cKj
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+abI
+abI
+abO
+abO
+abO
+coW
 aaa
 aaa
 aaa
@@ -46114,13 +44910,13 @@ crj
 crj
 crj
 crj
-cKj
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+abC
+abJ
+abC
+abO
+abO
+abO
+coW
 aaa
 aaa
 aaa
@@ -46372,12 +45168,12 @@ mDE
 mDE
 crj
 cKj
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+abI
+abI
+abO
+abO
+abO
+coW
 aaa
 aaa
 aaa
@@ -46630,11 +45426,11 @@ mDE
 crj
 coW
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+coW
+coW
+coW
+coW
+coW
 aaa
 aaa
 aaa
@@ -46886,12 +45682,12 @@ crj
 crj
 crj
 cKj
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+abI
+abI
+abO
+abO
+abO
+coW
 aaa
 aaa
 aaa
@@ -47142,13 +45938,13 @@ crj
 viT
 viT
 crj
-cKj
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+abC
+abJ
+abC
+abO
+abO
+abO
+coW
 aaa
 aaa
 aaa
@@ -47400,12 +46196,12 @@ viT
 viT
 crj
 cKj
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+abI
+abI
+abO
+abO
+abO
+coW
 aaa
 aaa
 aaa
@@ -47658,11 +46454,11 @@ crj
 crj
 coW
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+coW
+coW
+coW
+coW
+coW
 aaa
 aaa
 aaa
@@ -48926,7 +47722,7 @@ crj
 crj
 crj
 crj
-cIT
+fuF
 crj
 crj
 crj
